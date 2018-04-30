@@ -8,12 +8,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ConfidentialsWebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[Controller]")]
     [CustomAuthorizationFilter]
     public class ConfidentialsController : Controller
     {
         [HttpPost]
-
+        [Route("")]
         public ActionResult Post([FromBody]User user)
         {
             try

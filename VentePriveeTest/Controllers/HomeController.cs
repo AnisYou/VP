@@ -11,7 +11,7 @@ namespace VentePriveeTest.Controllers
     public class HomeController : Controller
     {
         public const string WEBAPIAUTHENTICATEURI = "http://localhost:57770/api/authenticate/";
-        public const string WEBAPICONFIDENTIALSURI = "http://localhost:57775/api/confidentials";
+        public const string WEBAPICONFIDENTIALSURI = "http://localhost:57775/api/confidentials/";
 
         public IActionResult Index()
         {

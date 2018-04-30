@@ -4,10 +4,11 @@ using System;
 
 namespace AuthenticationWebAPI.Controllers
 {
-    [Route("api/authenticate")]
+    [Route("api/[Controller]")]
     public class AuthenticateController : Controller
     {
         [HttpPost]
+        [Route("")]
         public IActionResult Post([FromBody]User user)
         {
             try
